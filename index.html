@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulciné - Repostería Cinematográfica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-viva-magenta {
+            background-color: #BB2649;
+        }
+        .text-viva-magenta {
+            color: #BB2649;
+        }
+        .bg-pink-light {
+            background-color: #ef95b5;
+        }
+        .text-pink-light {
+            color: #ef95b5;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-viva-magenta font-semibold hover:text-pink-light">Inicio</a>
+                    <a href="nosotros.html" class="text-gray-700 hover:text-pink-light">Nosotros</a>
+                    <a href="tienda.html" class="text-gray-700 hover:text-pink-light">Tienda</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-pink-light">Servicios</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-pink-light">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="Imágenes/cine.webp" alt="Postres inspirados en cine" class="w-full h-auto md:h-screen object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="title-font text-4xl md:text-6xl font-bold text-white mb-4" data-aos="fade-down">Dulciné</h1>
+                <p class="text-xl md:text-2xl text-white mb-8" data-aos="fade-up" data-aos-delay="200">Postres inspirados en tus películas y series favoritas</p>
+                <a href="tienda.html" class="bg-viva-magenta hover:bg-pink-light text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block" data-aos="fade-up" data-aos-delay="400">Ver Menú</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portafolio -->
+    <section class="py-16 bg-pink-light bg-opacity-10">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl md:text-4xl text-center text-viva-magenta mb-12" data-aos="fade-up">Nuestro Portafolio</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen1.png" alt="Postre 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen2.png" alt="Postre 2" class="w-full h-64 object-cover">
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen3.png" alt="Postre 3" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl md:text-4xl text-center text-viva-magenta mb-12" data-aos="fade-up">Nuestros Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="flex flex-col md:flex-row items-center bg-pink-light bg-opacity-10 rounded-lg p-6 hover-scale" data-aos="fade-right">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen12.jpeg" alt="Repostería Cinematográfica" class="rounded-lg w-full h-48 object-cover">
+                    </div>
+                    <div class="md:w-2/3 md:pl-6">
+                        <h3 class="title-font text-xl text-viva-magenta mb-2">Repostería Cinematográfica</h3>
+                        <p class="text-gray-600">Creaciones inspiradas en películas y series, donde sabores, texturas y colores representan universos narrativos.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="flex flex-col md:flex-row items-center bg-pink-light bg-opacity-10 rounded-lg p-6 hover-scale" data-aos="fade-left">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen13.jpeg" alt="Espacio Temático" class="rounded-lg w-full h-48 object-cover">
+                    </div>
+                    <div class="md:w-2/3 md:pl-6">
+                        <h3 class="title-font text-xl text-viva-magenta mb-2">Espacio Temático</h3>
+                        <p class="text-gray-600">Un lugar donde la decoración, música, aromas y servicio se unen para recrear universos audiovisuales.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="servicios.html" class="bg-viva-magenta hover:bg-pink-light text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Conoce Todos Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-viva-magenta text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16 mb-4">
+                    <p class="text-pink-light">Postres inspirados en el mundo del cine y la televisión.</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Contacto</h3>
+                    <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> dulcinebakery@gmail.com</p>
+                    <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> 302 606 2384</p>
+                    <p><i data-feather="instagram" class="inline mr-2"></i> @dulcine_bakery</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Horario</h3>
+                    <p class="mb-2">Lunes a Viernes: 9am - 7pm</p>
+                    <p>Sábados: 10am - 5pm</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Ubicación</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1758668286389!6m8!1m7!1sT58JcU04stiodS8kN5DuCg!2m2!1d6.266051611192781!2d-75.59339455787489!3f245.16!4f9.230000000000004!5f0.4000000000000002" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-pink-light mt-8 pt-8 text-center">
+                <p>© 2025 Dulciné - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+
+        // Carrusel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            const inner = carousel.querySelector('.carousel-inner');
+            const items = carousel.querySelectorAll('.carousel-item');
+            const prevBtn = carousel.querySelector('.carousel-prev');
+            const nextBtn = carousel.querySelector('.carousel-next');
+            const indicators = carousel.querySelectorAll('.carousel-indicator');
+            
+            let currentIndex = 0;
+            const itemWidth = items[0].clientWidth;
+            
+            function updateCarousel() {
+                inner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    if(index === currentIndex) {
+                        indicator.classList.remove('opacity-50');
+                        indicator.classList.add('opacity-100');
+                    } else {
+                        indicator.classList.add('opacity-50');
+                        indicator.classList.remove('opacity-100');
+                    }
+                });
+            }
+            
+            // Next button
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+            
+            // Previous button
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+            
+            // Indicator clicks
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Auto-rotate every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            }, 5000);
+            
+            // Initialize
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>

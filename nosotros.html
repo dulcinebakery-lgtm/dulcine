@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Dulciné</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-viva-magenta {
+            background-color: #BB2649;
+        }
+        .text-viva-magenta {
+            color: #BB2649;
+        }
+        .bg-pink-light {
+            background-color: #ef95b5;
+        }
+        .text-pink-light {
+            color: #ef95b5;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-light">Inicio</a>
+                    <a href="nosotros.html" class="text-viva-magenta font-semibold hover:text-pink-light">Nosotros</a>
+                    <a href="tienda.html" class="text-gray-700 hover:text-pink-light">Tienda</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-pink-light">Servicios</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-pink-light">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="relative py-20 bg-pink-light bg-opacity-10">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-4xl md:text-5xl text-viva-magenta mb-6" data-aos="fade-down">Conoce Nuestra Historia</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto" data-aos="fade-up">Fusionando el arte del cine con la magia de la repostería para crear experiencias únicas.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-pink-light bg-opacity-10 p-8 rounded-lg" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-viva-magenta p-3 rounded-full mr-4">
+                            <i data-feather="target" class="text-white"></i>
+                        </div>
+                        <h2 class="title-font text-2xl text-viva-magenta">Misión</h2>
+                    </div>
+                    <p class="text-gray-700">Deleitamos a nuestros clientes con una experiencia gastronómica única que fusiona el arte visual, la cultura cinematográfica y la excelencia culinaria. Creamos postres inspiradores que despiertan emociones y recuerdos ligados al mundo del cine y la televisión.</p>
+                </div>
+                
+                <div class="bg-pink-light bg-opacity-10 p-8 rounded-lg" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-viva-magenta p-3 rounded-full mr-4">
+                            <i data-feather="eye" class="text-white"></i>
+                        </div>
+                        <h2 class="title-font text-2xl text-viva-magenta">Visión</h2>
+                    </div>
+                    <p class="text-gray-700">Ser líderes en innovación gastronómica a nivel municipal para 2029, expandiendo nuestras sedes y llevando experiencias únicas a toda la comunidad. Transformar la experiencia culinaria en una verdadera obra de arte que celebre la diversidad de sabores y la riqueza del cine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 bg-pink-light bg-opacity-10">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl text-center text-viva-magenta mb-12" data-aos="fade-up">Nuestros Valores</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-viva-magenta text-white p-4 rounded-full inline-block mb-4">
+                        <i data-feather="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta mb-2">Igualdad</h3>
+                    <p class="text-gray-600">Promovemos un entorno inclusivo donde todos son valorados y respetados.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-viva-magenta text-white p-4 rounded-full inline-block mb-4">
+                        <i data-feather="feather" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta mb-2">Creatividad</h3>
+                    <p class="text-gray-600">Fomentamos la innovación y expresión artística en todas nuestras creaciones.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-viva-magenta text-white p-4 rounded-full inline-block mb-4">
+                        <i data-feather="award" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta mb-2">Calidad</h3>
+                    <p class="text-gray-600">Utilizamos los mejores ingredientes y técnicas para garantizar excelencia.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-viva-magenta text-white p-4 rounded-full inline-block mb-4">
+                        <i data-feather="leaf" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta mb-2">Sostenibilidad</h3>
+                    <p class="text-gray-600">Practicamos responsabilidad ambiental en todos nuestros procesos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl text-center text-viva-magenta mb-12" data-aos="fade-up">Conoce Nuestro Equipo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4 border-4 border-pink-light">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Saray.jpeg" alt="Saray Castañeda" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta">Saray Castañeda</h3>
+                    <p class="text-gray-600">Gerente General</p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4 border-4 border-pink-light">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Isabella.jpeg" alt="Isabella Sánchez" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta">Isabella Sánchez</h3>
+                    <p class="text-gray-600">Coordinadora de Producción</p>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4 border-4 border-pink-light">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Nicoll.jpeg" alt="Nicoll Silva" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta">Nicoll Silva</h3>
+                    <p class="text-gray-600">Coordinadora de Marketing</p>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="rounded-full overflow-hidden w-48 h-48 mx-auto mb-4 border-4 border-pink-light">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Ximena.jpeg" alt="Ximena Concha" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="title-font text-xl text-viva-magenta">Ximena Concha</h3>
+                    <p class="text-gray-600">Coordinadora Financiera</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="title-font text-3xl text-viva-magenta mb-6" data-aos="fade-up">
+                Nuestro Video
+            </h2>
+            <video controls class="mx-auto rounded-2xl shadow-lg" width="800">
+                <source src="Imágenes/Dulciné Video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-viva-magenta text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16 mb-4">
+                    <p class="text-pink-light">Postres inspirados en el mundo del cine y la televisión.</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Contacto</h3>
+                    <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> dulcinebakery@gmail.com</p>
+                    <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> 302 606 2384</p>
+                    <p><i data-feather="instagram" class="inline mr-2"></i> @dulcine_bakery</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Horario</h3>
+                    <p class="mb-2">Lunes a Viernes: 9am - 7pm</p>
+                    <p>Sábados: 10am - 5pm</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Ubicación</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1758668286389!6m8!1m7!1sT58JcU04stiodS8kN5DuCg!2m2!1d6.266051611192781!2d-75.59339455787489!3f245.16!4f9.230000000000004!5f0.4000000000000002" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-pink-light mt-8 pt-8 text-center">
+                <p>© 2025 Dulciné - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>

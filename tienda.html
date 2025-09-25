@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Dulciné</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-viva-magenta {
+            background-color: #BB2649;
+        }
+        .text-viva-magenta {
+            color: #BB2649;
+        }
+        .bg-pink-light {
+            background-color: #ef95b5;
+        }
+        .text-pink-light {
+            color: #ef95b5;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-light">Inicio</a>
+                    <a href="nosotros.html" class="text-gray-700 hover:text-pink-light">Nosotros</a>
+                    <a href="tienda.html" class="text-viva-magenta font-semibold hover:text-pink-light">Tienda</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-pink-light">Servicios</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-pink-light">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Store Hero -->
+    <section class="relative py-20 bg-pink-light bg-opacity-10">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-4xl md:text-5xl text-viva-magenta mb-6" data-aos="fade-down">Nuestra Tienda</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto" data-aos="fade-up">Descubre nuestros postres inspirados en tus películas y series favoritas.</p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl text-center text-viva-magenta mb-12" data-aos="fade-up">Menú de Halloween</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe w-full" src="https://heyzine.com/flip-book/a012276f32.html" style="border: 1px solid lightgray; height: 600px;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section class="py-16 bg-pink-light bg-opacity-10">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl text-center text-viva-magenta mb-12" data-aos="fade-up">Próximamente</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Coming 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen4.jpeg" alt="Postre próximo" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">Muy Pronto</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl text-viva-magenta mb-2">Combos Especiales</h3>
+                        <p class="text-gray-600">Paquetes temáticos para compartir con amigos y familia.</p>
+                    </div>
+                </div>
+                
+                <!-- Coming 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen5.jpeg" alt="Postre próximo" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">Muy Pronto</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl text-viva-magenta mb-2">Postres Navideños</h3>
+                        <p class="text-gray-600">Delicias inspiradas en tus películas navideñas favoritas.</p>
+                    </div>
+                </div>
+                
+                <!-- Coming 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/imagen6.jpeg" alt="Postre próximo" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">Muy Pronto</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl text-viva-magenta mb-2">Edición Limitada</h3>
+                        <p class="text-gray-600">Postres exclusivos inspirados en estrenos cinematográficos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-viva-magenta text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://huggingface.co/spaces/Sarwelv/dulcin/resolve/main/images/Dulciné.png" alt="Dulciné Logo" class="h-16 mb-4">                    
+                    <p class="text-pink-light">Postres inspirados en el mundo del cine y la televisión.</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Contacto</h3>
+                    <p class="mb-2"><i data-feather="mail" class="inline mr-2"></i> dulcinebakery@gmail.com</p>
+                    <p class="mb-2"><i data-feather="phone" class="inline mr-2"></i> 302 606 2384</p>
+                    <p><i data-feather="instagram" class="inline mr-2"></i> @dulcine_bakery</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Horario</h3>
+                    <p class="mb-2">Lunes a Viernes: 9am - 7pm</p>
+                    <p>Sábados: 10am - 5pm</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-xl mb-4">Ubicación</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1758668286389!6m8!1m7!1sT58JcU04stiodS8kN5DuCg!2m2!1d6.266051611192781!2d-75.59339455787489!3f245.16!4f9.230000000000004!5f0.4000000000000002" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-pink-light mt-8 pt-8 text-center">
+                <p>© 2025 Dulciné - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
